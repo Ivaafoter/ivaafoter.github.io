@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="estilos/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 20</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Mr+Dafoe);
+@import url(https://fonts.googleapis.com/css?family=Mukta+Malar:300,700);
+ body { 
+            margin: 0;
+        }
+    
+        .grid-layout {
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            margin: 0;
+            padding: 0;
+        }
+    
+        .grid-layout nav {
+            background: #e2b167;
+            font-family: 'Mukta Malar';
+            position: relative;
+            z-index: 1;
+        }
+    
+        .grid-layout nav a {
+            display: block;
+            text-decoration: none;
+            color: #ffffff;
+            padding: 10%;
+            width: 100%;
+            font-size: 25px;
+            font-weight: 400;
+            text-align: left;
+            border-bottom: 0px;
+            background-color: #4ec0ec;
+            margin-bottom: 5px;
+            position: relative;
+        }
+    
+        .grid-layout nav a::before {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background-color: #7adbb4;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.5s ease-in-out;
+        }
+    
+        .grid-layout nav a:hover::before {
+            transform: scaleX(1);
+        }
+    
+        .grid-layout header {
+            padding: 10px;
+            background-color: #7ca8d8;
+            color: #ffffff;
+            position: relative;
+            text-align: center;
+            grid-column: 1 / span 3;
+        }
+    
+        .grid-layout .header__left-side {
+            position: absolute;
+            bottom: 5px;
+            left: 5px;
+        }
+    
+        .grid-layout .header__right-side {
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+        }
+    
+        .grid-layout .header__name {
+            margin: 0;
+            padding-top: 20px;
+        }
+    
+        .grid-layout .main {
+            background-color: #e2b167;
+        }
+    </style>
+</head>
+
+<body>
+ 
+    <div class="grid-layout">
+        <header>
+            <h1>Prácticas HTML/CSS 2023</h1>
+            <p class="header__left-side"><strong>Nombre y apellidos: Iván Afonso Terol</strong></p>
+            <p class="header__right-side"><strong>Grupo: 1ºBachillerato A</strong></p>
+        </header>
+        <nav>
+            <a href="p1.html">Práctica 1</a>
+            <a href="p2.html">Práctica 2</a>
+            <a href="p3.html">Práctica 3</a>
+            <a href="p4.html">Práctica 4</a>
+            <a href="p5.html">Práctica 5</a>
+            <a href="p6.html">Práctica 6</a>
+            <a href="p7.html">Práctica 7</a>
+            <a href="p8.html">Práctica 8</a>
+            <a href="p9.html">Práctica 9</a>
+            <a href="p10.html">Práctica 10</a>
+            <a href="p11.html">Práctica 11</a>
+            <a href="p12.html">Práctica 12</a>
+            <a href="p13.html">Práctica 13</a>
+            <a href="p14.html">Práctica 14</a>
+            <a href="p15.html">Práctica 15</a>
+            <a href="p16.html">Práctica 16</a>
+            <a href="p17.html">Práctica 17</a>
+            <a href="p18.html">Práctica 18</a>
+            <a href="p19.html">Práctica 19</a>
+        </nav>
+
+        <div class="main">
+           
+        </main>
+
+
+    </div>
+</body>
+
+</html>
